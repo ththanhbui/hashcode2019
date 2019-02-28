@@ -66,7 +66,7 @@ def doride(car, ride): # (eff, car, pts)
         return (endtime-pts+B-rtime[ride]/4000, (finish[ride][0], finish[ride][1], endtime), pts)
 
 # Start reading & parsing the input file
-print("Start reading & parsing the input file")
+print("Start reading & parsing the input file.")
 
 with open(fnames[0], 'r') as f:
     line = f.readline().split(' ')
@@ -154,7 +154,7 @@ while Q:
             heapq.heappush(Q, (eff, (i, j, car, curcars[i][2], pts))) # (-eff, (F, N, carstate, lastendtime))
 
 # print(ans)
-print(totalscore)
+print("Total score is "+totalscore)
 
 # Writing solutino to file
 print("-- Writing solution to file --")
